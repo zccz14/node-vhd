@@ -1,6 +1,6 @@
 {
   "name": "node-vhd",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "virtual hard disk",
   "main": "index.js",
   "scripts": {

@@ -3,7 +3,9 @@ const buffer = require('buffer');
 
 class VHD {
     constructor(size = 0) {
-        this.buffer = new buffer.Buffer(size);
+        var appendix = fs.readFileSync('./lib/vhd_appendix');
+        this.buffer = new buffer.Buffer.alloc(size + 512);
+        appendix.copy(this.buffer, size, 0, 512);
     }
 
     save(url) {

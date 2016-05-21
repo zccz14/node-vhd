@@ -1,0 +1,23 @@
+{
+  "name": "node-vhd",
+  "version": "0.1.0",
+  "description": "virtual hard disk",
+  "main": "index.js",
+  "scripts": {
+    "test": "index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/zccz14/node-vhd.git"
+  },
+  "keywords": [
+    "node",
+    "vhd"
+  ],
+  "author": "Riki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zccz14/node-vhd/issues"
+  },
+  "homepage": "https://github.com/zccz14/node-vhd#readme"
+}

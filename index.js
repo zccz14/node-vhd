@@ -76,6 +76,13 @@ class VHD {
         this.buffer = fs.readFileSync(url);
         return this;
     }
+    
+    initMBR() {
+        this.MBR = this.buffer.slice(0, 512);
+        var MBR = fs.readFileSync('./lib/mbr_default');
+        MBR.copy(this.MBR, 0, 0, 512);
+        return this;
+    }
 
     static load(url) {
         return (new VHD()).load(url);
